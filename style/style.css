@@ -1,0 +1,26 @@
+* {
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  border: none;
+}
+
+body {
+    position: absolute;
+    margin: 200px;
+    background-color: rgba(85, 107, 47, 0.158);
+}
+
+nav.navigationMinu {
+    position: relative;
+    width: 1922px;
+    height: 111px;
+    background: #FFFFFF;
+    top: -1px;
+    left: -1px;
+    border-width: 1px;
+    border-color: black;
+    opacity: 1;
+
+}
