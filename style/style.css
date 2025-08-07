@@ -10,10 +10,20 @@
 /* добовляем и определяем шрифт */
 
 @font-face {
-    font-family: Advent Pro;
-    src: url(fonts\AdventPro-Italic-VariableFont_wdth,wght.ttf) format('string');
-    src: url(fonts\AdventPro-VariableFont_wdth,wght.ttf) format('sting');
-    font-style: normal;
+    font-family: 'Advent Pro';  /* Название шрифта (можно с кавычками) */
+    src: url('../fonts/static/AdventPro-Medium.ttf') format('truetype');
+    font-weight: 100 900;  /* Для переменного шрифта (Variable Font) */
+    font-style: normal;    /* Обычное начертание */
+    font-size: 22px;
+}
+
+/* Жирный шрифт  */
+
+@font-face {
+    font-family: 'Advent Pro';
+    src: url('../fonts/static/AdventPro_ExtraExpanded-ExtraBold.ttf') format('truetype');
+    font-weight: 100 900;  /* Диапазон весов для переменного шрифта */
+    font-style: italic;    /* ЖИРНОЕ НАЧЕРТАНИЕ КАК ЖИРНЫЙ ЖИР */
 }
 
 body {
@@ -24,6 +34,7 @@ body {
 }
 
 /* Меню */
+
 nav.navigationMenuContainer {
     display: flex;
     flex-wrap: nowrap;
@@ -72,13 +83,11 @@ main section img {
 section.allTextContent {
     padding-left: 200px;
     padding-right: 200px;
-    font-weight: 400;
-}
+    font-style: normal;}
 
 h1 {
     color: #D50B19;
-    font-weight: 800;
-    font-size: 50px;
+    font-style: italic;    
 }
 
 /* Декоративная линия вдоль текста у заголовка  */
