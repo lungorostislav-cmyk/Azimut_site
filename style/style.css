@@ -1,9 +1,10 @@
 * {
-  padding: 0;
-  text-decoration: none;
-  list-style: none;
-  box-sizing: border-box;
-  border: none;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
 }
 
 body {
@@ -11,25 +12,28 @@ body {
     margin-right: 200px;
     background-color: rgba(85, 107, 47, 0.158);
 }
-/* Ебашим минюху */
 
-nav.navigationMinuContainer {
+/* Меню */
+nav.navigationMenuContainer {
     display: flex;
-    justify-content: flex-end;
+    flex-wrap: nowrap;
+    justify-content: space-between;
     background-color: beige;
     padding-left: 200px;
     padding-right: 200px;
 }
 
-ul.navigationMenu {
-    align-items: flex-end;
+ul.navigationMenuItem {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
 }
 
-.navigationMenu li a {
-    transition: 0.3;
+.navigationMenuItem li a {
+    color: inherit; 
+    transition: color 0.3s ease; 
 }
 
-.navigationMenu li a:hover {
+.navigationMenuItem li a:hover {
     color: brown;
 }
-
