@@ -78,32 +78,32 @@ section.allTextContent {
 h1 {
     color: #D50B19;
     font-weight: 800;
-    font-size: 70px;
+    font-size: 50px;
 }
 
 /* Декоративная линия вдоль текста у заголовка  */
 
 .decorativeLine {
-  position: relative;
-  margin: 20px 0;
+    position: relative;
+    margin: 20px 0;
 }
 
 .decorativeLine::before,
 .decorativeLine::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  width: 90%; /* Длина линии */
-  height: 3px; /* Толщина линии */
-  background: linear-gradient(90deg, transparent, #333, transparent); /* Градиент для красоты */
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 90%; /* Длина линии */
+    height: 4px; /* Толщина линии */
+    background: linear-gradient(30deg, transparent, #0161AF, transparent);
 }
-
+/* Отступ от текста слева */
 .decorativeLine::before {
-  left: 0;
-  transform: translateX(-100%); /* Отступ от текста */
+    left: 0;
+    transform: translateX(-100%); 
 }
-
+/* Отступ от текста справа */
 .decorativeLine::after {
-  right: 0;
-  transform: translateX(26%); /* Отступ от текста */
+    right: 0;
+    transform: translateX(35%); 
 }
