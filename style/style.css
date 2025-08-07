@@ -7,13 +7,19 @@
     text-decoration: none;
 }
 
-/* определяем шрифт */
+/* добовляем и определяем шрифт */
+
+@font-face {
+    font-family: Advent Pro;
+    src: url(fonts\AdventPro-Italic-VariableFont_wdth,wght.ttf) format('string');
+    src: url(fonts\AdventPro-VariableFont_wdth,wght.ttf) format('sting');
+    font-style: normal;
+}
 
 body {
     background-color: rgba(85, 107, 47, 0.158);
     font-family: Advent Pro;
     font-weight: 500;
-    font-style: Medium;
     font-size: 22px;
 }
 
@@ -42,8 +48,62 @@ ul.navigationMenuItem {
     color: brown;
 }
 
+/* параметры картинки в шапке */
 main section img {
     width: 100%;
     height: 100%;
     top: 110px;
+}
+
+/* добовляю красные круги под глазами у напки 
+ пока что отложил эту историю */
+
+.decor {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    padding-top: 300px;
+    border-width: 62px;
+    opacity: 1;
+}
+
+
+/* Параметры текста */
+section.allTextContent {
+    padding-left: 200px;
+    padding-right: 200px;
+    font-weight: 400;
+}
+
+h1 {
+    color: #D50B19;
+    font-weight: 800;
+    font-size: 70px;
+}
+
+/* Декоративная линия вдоль текста у заголовка  */
+
+.decorativeLine {
+  position: relative;
+  margin: 20px 0;
+}
+
+.decorativeLine::before,
+.decorativeLine::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 90%; /* Длина линии */
+  height: 3px; /* Толщина линии */
+  background: linear-gradient(90deg, transparent, #333, transparent); /* Градиент для красоты */
+}
+
+.decorativeLine::before {
+  left: 0;
+  transform: translateX(-100%); /* Отступ от текста */
+}
+
+.decorativeLine::after {
+  right: 0;
+  transform: translateX(26%); /* Отступ от текста */
 }
